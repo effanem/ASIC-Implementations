@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : pri_enc8
+Version: V-2023.12-SP4
+Date   : Sun Jan 18 23:37:16 2026
+****************************************
+
+Library(s) Used:
+
+    saed14lvt_base_ff0p715v125c (File: /home/synopsys/installs/LIBRARIES/SAED14_EDK/SAED14nm_EDK_STD_LVT/liberty/nldm/base/saed14lvt_base_ff0p715v125c.db)
+
+Number of ports:                           14
+Number of nets:                            26
+Number of cells:                           16
+Number of combinational cells:             12
+Number of sequential cells:                 4
+Number of macros/black boxes:               0
+Number of buf/inv:                          3
+Number of references:                       7
+
+Combinational area:                  3.507600
+Buf/Inv area:                        0.532800
+Noncombinational area:               3.729600
+Macro/Black Box area:                0.000000
+Net Interconnect area:               7.217971
+
+Total cell area:                     7.237200
+Total area:                         14.455171
+1

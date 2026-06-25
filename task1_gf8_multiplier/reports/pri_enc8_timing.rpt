@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : pri_enc8
+Version: V-2023.12-SP4
+Date   : Sun Jan 18 23:37:21 2026
+****************************************
+
+Operating Conditions: ff0p715v125c   Library: saed14rvt_base_ff0p715v125c
+Wire Load Model Mode: top
+
+  Startpoint: req[6] (input port clocked by clk)
+  Endpoint: code_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INPUTS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pri_enc8           8000                  saed14rvt_base_ff0p715v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.50       1.50
+  input external delay                                    1.00       2.50 f
+  req[6] (in)                                             0.00       2.50 f
+  U16/X (SAEDLVT14_OR4_1)                                 0.05       2.55 f
+  U15/X (SAEDLVT14_INV_1)                                 0.05       2.59 r
+  U17/X (SAEDLVT14_AOI21_0P5)                             0.06       2.65 f
+  U18/X (SAEDLVT14_AOI21_0P5)                             0.04       2.69 r
+  code_reg[0]/D (SAEDLVT14_FDP_V2_0P5)                    0.00       2.69 r
+  data arrival time                                                  2.69
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             1.50       6.50
+  clock uncertainty                                      -0.30       6.20
+  code_reg[0]/CK (SAEDLVT14_FDP_V2_0P5)                   0.00       6.20 r
+  library setup time                                      0.00       6.20
+  data required time                                                 6.20
+  --------------------------------------------------------------------------
+  data required time                                                 6.20
+  data arrival time                                                 -2.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.51
+
+
+1
